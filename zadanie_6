@@ -6,11 +6,9 @@ read parametry
  funkcja ()
  {
 
- echo "Melduje, że przyjąłem $# parametrów." 
- echo "Pierwszy: $1, trzeci: $3" 
- echo "Wszystkie: $@" 
- echo "To mówiłem ja: $0"
- echo "Znajduje się tutaj: $PWD"
+echo "nazywam się: $1" 
+echo "mój katalog domowy to: $HOME" 
+echo "oto zawartość mojego katalogu domowego: $(ls -l $HOME)"
 }
 
 funkcja $parametry

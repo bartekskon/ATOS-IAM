@@ -1,0 +1,15 @@
+#!/bin/bash
+clear
+# Przyjmiemy katalog bieżący do kopiowania zamiast $HOME, 
+# aby kopiowanie trwało krócej i nie robiło śmietnika
+
+read katalog
+
+funkcja ()
+{
+mkdir $katalog    
+cp -r $PWD/. $katalog/ 2>$katalog/error_cp.log 
+
+}
+
+funkcja 

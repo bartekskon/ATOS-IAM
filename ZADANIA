@@ -1,0 +1,184 @@
+SKRYPTY 
+ 
+
+0. W katalogu domowym utwórz katalog "skrypty". Wszelkie skrypty zapisuj w tym katalogu. 
+
+
+1. Napisz skrypt, który zapyta Cię o nazwę użytkownika. Sprawdź czy podana nazwa odpowiada 
+Twojej nazwie użytkownika (komenda whoami). Jeśli tak wyświetl kominikat „Witaj 
+<username>, jeśli nie wypisz „Błędny username”, jeśli przedstawisz się jako root wypisz „Witaj 
+Bogu!”.  
+ 
+
+2. Za pomocą pętli for odczytaj plik linia po linii. Każdą linię zaopatrz w numer linii. 
+ 
+ Plik wejścia:  
+ linia x 
+ linia y 
+ linia z 
+
+ output skryptu: 
+ Linia nr 1: linia z 
+ Linia nr 2: linia y 
+ Linia nr 3: linia x 
+
+Uzyskaj poniższy output wykorzystując ten sam plik wejścia, ale tym razem pętlę while. 
+Wykorzystaj przekazanie procesu <(), usuwając ostatni wiersz z pliku. 
+
+output skryptu: 
+ Linia nr 1: linia x 
+ Linia nr 2: linia y 
+
+ 
+3. Sprawdź które linie w pliku Students.txt są krótsze niż 50 znaków. Rezultat wypisz na ekran 
+podając liczbę znaków na początku wiersza. 
+
+output skryptu: 
+48|1|Kochmańska|Anna|Kwiatowa 40|12|176|68|3|7|3|5 
+... 
+
+
+4. Oblicz i wypisz różnicę między najdłuższą i najkrótszą linią w pliku Students.txt. Pozbądź się 
+nagłówka. 
+ 
+
+5. Napisz skrypt, który będzie przyjmował co najmniej trzy parametry. Następnie wypisz: 
+ 
+Melduje, że przyjąłem <liczba parametrów> parametrów. 
+ Pierwszy: <parametr 1>, trzeci: <parametr 3> 
+ Wszystkie: <wszystkie przekazane parametry> 
+ To mówiłem ja: <nazwa skryptu> 
+ Znajduje się tutaj: <ścieżka bezwzględna do skryptu> 
+ 
+
+6. Napisz skrypt, który wyświetli poniższy output. Imię przekaż jako parametr podczas 
+uruchomienia skryptu 
+ 
+ nazywam się: <imię> 
+ mój katalog domowy to: <katalog> 
+ oto zawartość mojego katalogu domowego: <zawartość katalogu> 
+
+ 
+7. Napisz skrypt, który tworzy katalog podany jako parametr. 
+ Przed jego utworzeniem skrypt sprawdza czy katalog już istnieje - jeśli nie, tworzy go. 
+ Jeśli katalog istnieje - wyświetla stosowny komunikat i kończy działanie. 
+ 
+
+8. Napisz skrypt, który skopiuje pliki z katalogu domowego do katalogu podanego jako parametr. 
+ Skieruj error-y do <katalog podany w param>/error_cp.log 
+
+ 
+9. Napisz skrypt, który przyjmie dwie liczby naturalne jako parametry. 
+Wypisz na ekran najpierw ich sumę a następnie iloczyn. 
+ 
+Do osiągnięcia tego samego celu utwórz i wykorzystaj funkcje ‘dodaj ‘oraz ‘pomnoz‘.  
+Wyświetl zwracany przez funkcje wynik. 
+
+
+10. ** Napisz skrypt, w którym jako parametr przekażesz działanie dodawania lub mnożenia 
+dwóch liczb naturalnych. np. ./zad9.sh 2+2  lub  ./zad9.sh 2*2 
+ 
+• sprawdź czy przekazany znak jest dopuszczalny (regex), jeśli nie - zakończ działanie. 
+• Wypisz jaki znak znajduje się w działaniu 
+• zagwarantuj, że zostały przekazane dokładnie dwie liczby w parametrze 
+• wypisz wynik działania 
+ 
+
+11. Napisz skrypt, który poprosi użytkownika o podanie 2 liczb naturalnych.  Jeśli liczba pierwsza jest 
+większa lub równa drugiej to wypisuje na ekranie "1>=2", w odwrotnym przypadku "1<2".  
+ Gdy liczba parametrów jest inna - wypisze "error" (wykorzystaj exit code). 
+ 
+• W skrypcie uruchom skrypt z zadania 9 oraz jako parametry przekaż podane przez 
+użytkownika liczby. 
+
+
+12. Napisz skrypt, który wypisze na ekranie ilość plików i katalogów w przekazanej jako parametr 
+ścieżce. 
+Wywołanie: ./zad12.sh /home  
+
+Oczekiwany output: 
+Znalezioncyh plików <liczba>  
+Znalezioncyh folderów <liczba> 
+
+ 
+13. Napisz skrypt, który zliczy linie w pliku co_codes.csv. Przekaż ten plik jako pierwszy parametr. 
+
+Wyświetl:  "Plik <nazwa_pliku> ma <liczba_linii> linii".  
+ 
+Jeśli plik ma więcej linii niż podana w drugim parametrze liczba to wyświetl komunikat: 
+"Wartość przekroczona". 
+
+
+14. Utwórz skrypt w którym jako parametr przekażesz dwie różne litery alfebetu z zakresu [A-Z]. 
+• skrypt tworzy plik 'starts_with_[X]_[Y].txt' w którym znajdą się wszystkie kraje z 
+pliku co_codes.csv rozpoczynające się na literę [X] i [Y].  
+• wyświetl w skrypcie informację o ilości unikalnych sub-regionów. 
+• wyświetl nazwy krajów, których sub region zawiera słowo "and" lub znak "-". 
+
+ 
+15. Napisz skrypt, który wyszuka w filesystemie wszystkie pliki z rozszerzeniem '.sh' oraz sprawdzi 
+czy mają one uprawnienia do wykonywania. Wykorzystaj Wildcard-y podczas wyszukiwania. 
+      
+Wypisz na wyjściu odpowiednio: 
+ Plik <nazwa_pliku>.sh ma prawo do wykonywania 
+ Lub - Plik <nazwa_pliku>.sh nie może się wykonać! 
+      
+** Utwórz tablicę w której przechowasz wszystkie unikalne posortowane nazwy plików. 
+Pozbądź się ścieżki bezwzględnej oraz rozszerzenia '.sh'. Wypisz pierwszą i ostatnią nazwę 
+oraz ilość wszystkich elementów. 
+
+ 
+16. Napisz skrypt, który w katalogu <zad_16> utworzy pliki numerowane od 4 do 8 oraz w każdym z 
+plików umieści informację, czy liczba w jego nazwie jest liczbą parzysta czy też nie.  
+
+ 
+17. Napisz skrypt, który na podstawie pliku 'co_codes.csv' utworzy 'co_codes.LOG'. 
+Pozbądź się nagłówka oraz uzyskaj następujący format danych wyjściowych: 
+
+ Country: <country z csv> (<alpha-2 z csv>) 
+ Region: <region z csv> 
+ Sub region: <sub-region z csv> 
+ - 
+ <pusty wiersz> 
+ 
+
+18. Napisz skrypt, który jako parametr przyjmie utworzony w zad. 17 plik i zmieni go na format: 
+ 
+<country> (<alpha-2 z csv>)|<region>|<sub-region> 
+ 
+ Wynik przekaż do pliku o tej samej nazwie z rozszerzeniem .TXT 
+ 
+
+19. Napisz skrypt, który przetwarzając dane przedstawione poniżej (format CSV) wyświetli je w 
+takim formacie jak format TXT.   
+
+ CSV: naglowek1, naglowek2 
+ wart1, wart2 
+ wart21, wart22 
+ 
+ TXT: naglowek1: wart1 
+ naglowek2: wart2 
+ 
+ naglowek1: wart21 
+ naglowek2: wart22 
+ 
+
+20. Napisz pętle while, która będzie wyświetlać kolejne liczby naturalne ciagu Fibonaciego co 2 
+sekundy. Wyświetl sumę pierwszych 10 liczb ciągu. 
+
+Ciąg Fibonacciego – ciąg liczb naturalnych określony rekurencyjnie w 
+sposób następujący: Pierwszy wyraz jest równy 0, drugi jest równy 1, 
+każdy następny jest sumą dwóch poprzednich.  
+
+ 
+21. ** Napisz skrypt, który przyjmuje dowolną ilość parametrów a następnie: 
+
+• utwórz tablicę zawierającą wszystkie przekazane do skryptu parametry. 
+• Wypisz na wyjściu: 
+Przekazano <ilość> elementów 
+Pierwszy element: <pierwszy>, przedostatni <przedostatni> 
+Unikatowe elementy: <unikaty>, ich ilość <ilość unikatów> 
+
+• iterując po wszystkich elementach tablicy wypisz: 
+o pierwszy element zawierający w nazwie wyłącznie liczby naturalne 
+o przedostatni zawierający w nazwie dowolne litery/znaki 

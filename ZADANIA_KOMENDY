@@ -1,0 +1,18 @@
+COMMAND LINE 
+
+0. W katalogu domowym utwórz katalog commands i umieszczaj tam pliki z wynikiem. 
+
+
+1. Wyświetl pierwszą linię z pliku /etc/passwd korzystając z polecenia head lub sed. 
+Wynik przekieruj do pliku nagłówek.txt 
+ 
+
+2. Plik z użytkownikami /etc/passwd posortuj po UID, następnie: 
+o wyświetl jednocześnie największy i najmniejszy UID w systemie 
+o wyświetl jednocześnie trzecią i przedostatnią linię z pliku /etc/passwd (process 
+substitution) 
+ 
+
+3. Znaleźć procesy wykorzystywane przez użytkownika studentXX. (wylistowanie plików). 
+(Polecenie find) Katalog /proc, rezultat zapisać do pliku moje_procesy.txt w katalogu 
+domowym, wszelkie błędy zapisać do pliku error.log w katalogu domowym. 

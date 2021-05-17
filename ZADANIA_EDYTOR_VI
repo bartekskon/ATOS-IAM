@@ -1,0 +1,11 @@
+Edytor VI 
+
+ 
+1. Korzystając z edytora VI otwórz plik Students.txt oraz zamień wszystkie wystąpienia ‘|’ na 
+‘^’. Zapisz plik. 
+ 
+
+2. Włącz numerowanie linii w edytorze vi. 
+
+
+3. Otwórz ponownie plik Students.txt i zamień wszystkie ’^’ z powrotem na ‘|’. Zapisz plik. 

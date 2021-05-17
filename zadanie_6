@@ -5,10 +5,10 @@ read parametry
 
  funkcja ()
  {
-
 echo "nazywam się: $1" 
 echo "mój katalog domowy to: $HOME" 
 echo "oto zawartość mojego katalogu domowego: $(ls -l $HOME)"
 }
+
 
 funkcja $parametry

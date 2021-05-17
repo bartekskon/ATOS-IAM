@@ -1,5 +1,16 @@
 #!/bin/bash
 clear
 
+read katalog
 
-dd
+funkcja ()
+{
+if [ -d $katalog ]
+then
+echo "Katalog istnieje"
+else
+mkdir $katalog
+fi
+}
+
+funkcja 

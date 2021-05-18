@@ -8,8 +8,11 @@ funkcja ()
 if [[ $liczba1 -ge $liczba2 ]]
 then
  echo "1>=2" #>&2; exit 1
-else
+elif [[ $liczba1 -lt $liczba2 ]]
+then
  echo "1<2"
+else
+ echo "error" 2> ./smietnik/error.log
 fi
 }
 funkcja

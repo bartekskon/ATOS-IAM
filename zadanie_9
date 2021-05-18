@@ -9,7 +9,7 @@ read liczba2
 funkcja ()
 {
 zakres='^[0-9]+$'
-# "-eq" == "=~" ????
+# "-eq" == "=~" - nie równy tylko z zakresu
 if ! [[ $liczba1 =~ $zakres && $liczba2 =~ $zakres ]]
 then
  echo "Podane parametry nie są liczbami naturalnymi"

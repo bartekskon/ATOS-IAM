@@ -1,0 +1,21 @@
+#!/bin/bash
+clear
+
+yyy=($(grep -Eo '[0-9]+|[[:punct:]]+|[0-9]+' <<<$1))
+
+function dzialanie ()
+{
+if [[ ${yyy[1]} = "*" || ${yyy[1]} = "+" ]]
+then
+echo
+else
+echo "Błąd - wprowadzono niepoprawny parametr"
+exit
+fi
+}
+dzialanie
+
+
+obliczenia=$((${yyy[0]} ${yyy[1]} ${yyy[2]}))
+echo "$obliczenia"
+echo "${yyy[1]}"

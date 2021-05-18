@@ -1,0 +1,37 @@
+#!/bin/bash
+clear
+
+echo "Wprowadz pierwszą liczbę naturalną"
+read liczba1
+echo "Wprowadz drugą liczbę naturalną"
+read liczba2
+
+function dodaj ()
+{
+    zakres='^[0-9]+$' 
+    if ! [[ $liczba1 =~ $zakres && $liczba2 =~ $zakres ]] 
+    then 
+    echo "Podane parametry nie są liczbami naturalnymi" 
+    else 
+    dodawanie=$[$liczba1+$liczba2] 
+    echo "Wynik dodawania: $dodawanie" 
+    fi 
+}
+
+function pomnoz ()
+{
+    zakres='^[0-9]+$' 
+    if ! [[ $liczba1 =~ $zakres && $liczba2 =~ $zakres ]] 
+    then 
+    echo "Podane parametry nie są liczbami naturalnymi" 
+    else mnozenie=$[$liczba1*$liczba2] 
+    echo "Wynik mnozenia: $mnozenie" 
+    fi 
+}
+
+dodaj
+pomnoz
+
+#$1
+# wywołaj: ./zadanie_9_ver.2 dodaj
+# wywołaj: ./zadanie_9_ver.2 pomnoz

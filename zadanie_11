@@ -1,18 +1,27 @@
 #!/bin/bash
 clear
 
-source zadanie_9
+# source only first 9 lines of script zadanie_9
+# source zadanie_9 source whole script zadanie_9
+source <(head -n8 zadanie_9) 
 
 funkcja ()
 {
 if [[ $liczba1 -ge $liczba2 ]]
 then
- echo "1>=2" #>&2; exit 1
+ echo "1>=2"
+ # touch /root/test.txt - sprawdzenie przekierowania błędów ./zadanie_11 2>smietnik.error.log
 elif [[ $liczba1 -lt $liczba2 ]]
 then
  echo "1<2"
-else
- echo "error" 2> ./smietnik/error.log
 fi
 }
+
+zakres='^[0-9]+$'
+if [[ $liczba1 =~ $zakres && $liczba2 =~ $zakres ]]
+then
 funkcja
+else
+echo "error" 
+exit 128 
+fi

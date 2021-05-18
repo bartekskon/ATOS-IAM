@@ -1,0 +1,23 @@
+#!/bin/bash
+clear
+
+echo "Wprowadz pierwszą liczbę naturalną"
+read liczba1
+echo "Wprowadz drugą liczbę naturalną"
+read liczba2
+
+funkcja ()
+{
+zakres='^[0-9]+$'
+if ! [[ $liczba1 =~ $zakres && $liczba2 =~ $zakres ]]
+then
+ echo "Podane parametry nie są liczbami naturalnymi"
+else
+ dodawanie=$[$liczba1+$liczba2]
+ mnozenie=$[$liczba1*$liczba2]
+ echo "Wynik dodawania: $dodawanie"
+ echo "Wynik mnożenia: $mnozenie"
+fi
+}
+
+funkcja 

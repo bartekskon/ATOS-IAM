@@ -1,0 +1,15 @@
+#!/bin/bash
+clear
+
+source zadanie_9
+
+funkcja ()
+{
+if [[ $liczba1 -ge $liczba2 ]]
+then
+ echo "1>=2" #>&2; exit 1
+else
+ echo "1<2"
+fi
+}
+funkcja

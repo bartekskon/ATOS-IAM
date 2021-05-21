@@ -1,0 +1,22 @@
+#!/bin/bash
+clear
+
+read parametry
+
+tablica=($parametry)
+
+echo "Przekazano parametrów: ${#tablica[@]}"
+echo "Pierwszy parametr:${tablica[0]}"
+echo "Przedostatni parametr:${tablica[-2]}"
+
+#zmienna<(printf "%s\n" "${tablica[@]}" | sort -u)
+#zmienna=$(("${tablica[@]}" | sort -u))
+#echo $zmienna
+
+#readarray -t nowatablica < <(printf '%s\n' "${tablica[@]}" | sort -u)
+#echo $zmienna
+
+arr2=($(printf '%s\n' "${tablica[@]}" | sort -u)) 
+len2=${#arr2[@]}
+echo "Unikatowe elementy: ${arr2[*]}"
+echo "Ilość unikatów: ${len2}"

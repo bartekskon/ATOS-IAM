@@ -1,0 +1,9 @@
+#!/bin/bash
+clear
+
+# dlaczego dodanie parametru -l do la zlicza ukryty plik?
+plik=$(ls $1 | wc -l)
+echo "Znalezionych plików: $plik"
+
+foldery=$(ls -d $1 | wc -l)
+echo "Znalezionych folderów: $foldery"

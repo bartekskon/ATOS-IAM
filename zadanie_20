@@ -4,28 +4,31 @@ clear
 liczba0=0
 liczba1=1
 i=0
-wynik1=$(($liczba0+$liczba1))
 
- echo $liczba0
- #sleep 2s 
+ echo $liczba0 
+ echo $liczba0 > tmp.txt
+ sleep 2s 
  echo $liczba1
+ echo $liczba1 >> tmp.txt
 
     while (( $liczba0+$liczba1 && $i<8 ))
     do
     liczba2=$(($liczba0+$liczba1))
-    #sleep 2s
+    sleep 2s
     echo $liczba2
-
     liczba0=$(($liczba1))
     liczba1=$(($liczba2))
-
-    wynik2=$(($liczba1+$liczba2))
-    
+    echo $liczba2 >> tmp.txt
     ((i++))
     done
 
-   wynik=$(($wynik1+$wynik2))
-   echo "sdfdsf"
-   echo $wynik
-   echo "$@"
-   echo "sdfdsf"
+    wynik=0
+    while read num; do
+    wynik=$(( $wynik + $num ))
+    done <tmp.txt
+
+   sleep 2s
+   echo ""
+   echo "Suma pierwszych 10 liczb ciągu to: "$wynik
+
+   rm tmp.txt

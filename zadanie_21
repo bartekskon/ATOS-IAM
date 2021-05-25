@@ -1,5 +1,21 @@
+#Zadanie 21. ** 
+#Napisz skrypt, który przyjmuje dowolną ilość parametrów, a następnie: 
+
+#• utwórz tablicę zawierającą wszystkie przekazane do skryptu parametry. 
+#• Wypisz na wyjściu: 
+#   Przekazano <ilość> elementów 
+#   Pierwszy element: <pierwszy>, przedostatni <przedostatni> 
+#   Unikatowe elementy: <unikaty>, ich ilość <ilość unikatów> 
+
+#• iterując po wszystkich elementach tablicy wypisz: 
+#   Pierwszy element zawierający w nazwie wyłącznie liczby naturalne 
+#   Przedostatni zawierający w nazwie dowolne litery/znaki
+
 #!/bin/bash
 clear
+
+# Poniżej parametry do testów, aby nie wpisywać wpisywać ich do konsoli.
+#parametry=$(echo "t t @ t6 $ t 6y 888# 9999 77 6 6 6 e e e e 4 8 j")
 
 read parametry
 
@@ -9,14 +25,28 @@ echo "Przekazano parametrów: ${#tablica[@]}"
 echo "Pierwszy parametr:${tablica[0]}"
 echo "Przedostatni parametr:${tablica[-2]}"
 
-#zmienna<(printf "%s\n" "${tablica[@]}" | sort -u)
-#zmienna=$(("${tablica[@]}" | sort -u))
-#echo $zmienna
-
-#readarray -t nowatablica < <(printf '%s\n' "${tablica[@]}" | sort -u)
-#echo $zmienna
-
 arr2=($(printf '%s\n' "${tablica[@]}" | sort -u)) 
 len2=${#arr2[@]}
 echo "Unikatowe elementy: ${arr2[*]}"
 echo "Ilość unikatów: ${len2}"
+
+#Poniżej kod działający, ale bez iterowania tablicy - do poprawy
+echo $parametry >tmp.txt
+echo $parametry | sed 's/ /\n/g' >tmp.txt
+
+licznik='[^0-9]'
+while read num; do
+    if ! [[ $num =~ $licznik ]] ; 
+    then echo $num >> tmp2.txt; 
+    fi
+    done <tmp.txt
+
+echo "Pierwszy element zawierający wyłącznie liczby naturalne:"
+ head -n 1 tmp2.txt 
+
+# O co chodzi z 
+# "przedostatni element tablicy zawierający w nazwie dowolne znaki?"
+# Czy to nie to samo parametr wypisany w linii 3?
+
+rm tmp.txt
+rm tmp2.txt

@@ -1,0 +1,144 @@
+dn: uid=s21702,ou=stud04,dc=akademia,dc=int
+uid: s21702
+cn: Kathy Jacobs
+mail: kathy.jacobs@furby.int
+carLicense: SV74631
+mobile: 2342324
+
+dn: uid=s21703,ou=stud04,dc=akademia,dc=int
+uid: s21703
+telephoneNumber: +78123933752
+cn: Merle Alvarez
+mail: merle.alvarez@furby.int
+
+dn: uid=s21706,ou=stud04,dc=akademia,dc=int
+uid: s21706
+telephoneNumber: +78123555409
+cn: Leland Padilla
+mail: leland.padilla@furby.int
+carLicense: MS53948
+
+dn: uid=s21725,ou=stud04,dc=akademia,dc=int
+uid: s21725
+telephoneNumber: +78123539269
+cn: Ada Alvarado
+mail: ada.alvarado@furby.int
+carLicense: LR32246
+
+dn: uid=s21726,ou=stud04,dc=akademia,dc=int
+uid: s21726
+telephoneNumber: +78123507241
+cn: Laura Price
+mail: laura.price@furby.int
+carLicense: SA59027
+
+dn: uid=s21729,ou=stud04,dc=akademia,dc=int
+uid: s21729
+cn: Maria Schultz
+mail: maria.schultz@furby.int
+carLicense: MM68987
+
+dn: uid=s21731,ou=stud04,dc=akademia,dc=int
+uid: s21731
+telephoneNumber: +78123128922
+cn: Olivia Mason
+mail: olivia.mason@furby.int
+
+dn: uid=s21736,ou=stud04,dc=akademia,dc=int
+uid: s21736
+cn: Edgar Mcdaniel
+mail: edgar.mcdaniel@furby.int
+carLicense: OD54472
+
+dn: uid=s21743,ou=stud04,dc=akademia,dc=int
+uid: s21743
+telephoneNumber: +78123634778
+cn: Lindsay Parks
+mail: lindsay.parks@furby.int
+carLicense: LS67420
+
+dn: uid=s21746,ou=stud04,dc=akademia,dc=int
+uid: s21746
+telephoneNumber: +78123733456
+cn: Sally Becker
+mail: sally.becker@furby.int
+carLicense: LT69719
+
+dn: uid=s21751,ou=stud04,dc=akademia,dc=int
+uid: s21751
+telephoneNumber: +78123342650
+cn: Dominick Simpson
+mail: dominick.simpson@furby.int
+carLicense: JI63803
+
+dn: uid=s21757,ou=stud04,dc=akademia,dc=int
+uid: s21757
+telephoneNumber: +78123206801
+cn: Edmund Edwards
+mail: edmund.edwards@furby.int
+
+dn: uid=s21764,ou=stud04,dc=akademia,dc=int
+uid: s21764
+telephoneNumber: +78123440028
+cn: Edwin Sanchez
+mail: edwin.sanchez@furby.int
+carLicense: GR68952
+
+dn: uid=s21779,ou=stud04,dc=akademia,dc=int
+uid: s21779
+telephoneNumber: +78123237794
+cn: Kellie Lawrence
+mail: kellie.lawrence@furby.int
+carLicense: UN81712
+
+dn: uid=s21782,ou=stud04,dc=akademia,dc=int
+uid: s21782
+telephoneNumber: +78123343077
+cn: Abraham Myers
+mail: abraham.myers@furby.int
+
+dn: uid=s21785,ou=stud04,dc=akademia,dc=int
+uid: s21785
+telephoneNumber: +78123265780
+cn: Blanche Copeland
+mail: blanche.copeland@furby.int
+carLicense: JS59159
+
+dn: uid=s21786,ou=stud04,dc=akademia,dc=int
+uid: s21786
+telephoneNumber: +78123190029
+cn: Antoinette Brooks
+mail: antoinette.brooks@furby.int
+
+dn: uid=s21787,ou=stud04,dc=akademia,dc=int
+uid: s21787
+cn: June Spencer
+mail: june.spencer@furby.int
+carLicense: IB34144
+
+dn: uid=s21792,ou=stud04,dc=akademia,dc=int
+uid: s21792
+telephoneNumber: +78123972428
+cn: Michele Baldwin
+mail: michele.baldwin@furby.int
+carLicense: PX66731
+
+dn: uid=s21793,ou=stud04,dc=akademia,dc=int
+uid: s21793
+telephoneNumber: +78123971885
+cn: Calvin Hogan
+mail: calvin.hogan@furby.int
+carLicense: CE77773
+
+dn: uid=s21798,ou=stud04,dc=akademia,dc=int
+uid: s21798
+telephoneNumber: +78123539413
+cn: Roxanne Tate
+mail: roxanne.tate@furby.int
+carLicense: VA29650
+
+dn: uid=s21799,ou=stud04,dc=akademia,dc=int
+uid: s21799
+telephoneNumber: +78123190101
+cn: Gabriel Farmer
+mail: gabriel.farmer@furby.int
